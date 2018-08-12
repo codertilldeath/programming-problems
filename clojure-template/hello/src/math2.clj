@@ -1,4 +1,4 @@
-(ns hello.math2)
+(ns math2)
 
 (defn random2 []
   (rand))
