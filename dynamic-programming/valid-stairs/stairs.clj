@@ -1,4 +1,4 @@
-(ns stairs.core
+(ns stairs
   (:gen-class))
 
 (defn stairs-bot [n]
@@ -31,6 +31,12 @@
          (stairs-rec (- n choice) (dec choice))))))
 
 (defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!"))
+  [nstr rec]
+  (let [n (Integer/parseInt nstr)]
+    (if (Boolean/parseBoolean rec)
+      (do
+        (println "Running stairs recursive function")
+        (println (stairs-rec n (dec n))))
+      (do
+        (println "Running stairs bottom up implementation")
+        (println (stairs-bot n))))))
