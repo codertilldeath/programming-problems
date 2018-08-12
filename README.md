@@ -1,2 +1,2 @@
 # List of Problems
-- Grandest Staircase of them all
+1. Grandest Staircase of them all
