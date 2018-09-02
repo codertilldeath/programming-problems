@@ -1,2 +1,4 @@
 {:deps
- {math {:local/root "../math/"}}}
+ {math {:local/root "../math/"}}
+ :aliases
+ {:source {:extra-paths ["source"]}}}
